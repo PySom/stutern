@@ -1,0 +1,261 @@
+body{
+    background-color: #344;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.loader-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 240px;
+    animation-name: firstAnimate;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+}
+
+.inner-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+span{
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.first{
+    animation-name: firstAnimate;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+}
+
+.second{
+    animation-name: firstAnimate;
+    animation-duration: 2.5s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+}
+
+.third{
+    animation-name: firstAnimate;
+    animation-duration: 3.5s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+}
+
+.fourth{
+    animation-name: firstAnimate;
+    animation-duration: 4.5s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+}
+
+.fifth{
+    animation-name: firstAnimate;
+    animation-duration: 5.5s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+}
+
+
+@keyframes firstAnimate{
+    from{
+        opacity: 0;
+        transform: scale(0)
+    }
+    to{
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+
+
+@keyframes animate{
+    from{
+        width: 0;
+        height: 0;
+    }
+    to{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+.big-c{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000;
+    position: relative;
+    animation-name: big-cAnim;
+    animation-duration: 1s;
+}
+
+.bubble{
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+/* .b-1, .b-2, .b-3, .b-4, .b-5, .b-6, .b-7{
+    animation-delay: 1s;
+} */
+
+.b-1{
+  animation-name: b-1Anim;
+  animation-duration: 2s;
+}
+
+.b-2{
+    animation-name: b-2Anim;
+    animation-duration: 2s;}
+.b-3{
+    animation-name: b-3Anim;
+    animation-duration: 2s;
+}
+
+.b-4{
+    animation-name: b-4Anim;
+    animation-duration: 2s;
+}
+.b-5{
+    animation-name: b-5Anim;
+    animation-duration: 2s;
+}
+    
+.b-6{
+    animation-name: b-6Anim;
+    animation-duration: 2s;
+}
+
+.b-7{
+    animation-name: b-7Anim;
+    animation-duration: 2s;
+}
+
+
+
+@keyframes b-1Anim{
+    0%{
+        height: 14px;
+        width: 14px;
+        top: 40%;
+        left: 40%
+    }
+    to{
+        top: 5%;
+        left: 0;
+        height: 0;
+        width: 0;
+    }
+}
+
+@keyframes b-2Anim{
+    0%{
+        height: 14px;
+        width: 14px;
+        top: 40%;
+        left: 40%
+    }
+    to{
+        top: 5%;
+        left: 100%;
+        height: 0;
+        width: 0;
+    }
+}
+
+@keyframes b-3Anim{
+    0%{
+        height: 14px;
+        width: 14px;
+        top: 40%;
+        left: 40%
+    }
+    to{
+        top: 40%;
+        left: 0%;
+        height: 0;
+        width: 0;
+    }
+}
+
+@keyframes b-4Anim{
+    0%{
+        height: 14px;
+        width: 14px;
+        top: 40%;
+        left: 40%
+    }
+    to{
+        top: 40%;
+        left: 100%;
+        height: 0;
+        width: 0;
+    }
+}
+
+@keyframes b-5Anim{
+    0%{
+        height: 14px;
+        width: 14px;
+        top: 40%;
+        left: 40%
+    }
+    to{
+        top: 100%;
+        left: 0%;
+        height: 0;
+        width: 0;
+    }
+}
+
+@keyframes b-6Anim{
+    0%{
+        height: 14px;
+        width: 14px;
+        top: 40%;
+        left: 40%
+    }
+    to{
+        top: 100%;
+        left: 100%;
+        height: 0;
+        width: 0;
+    }
+}
+
+@keyframes b-7Anim{
+    from{
+        height: 14px;
+        width: 14px;
+    }
+    to{
+        height: 0;
+        width: 0;
+    }
+}
+
+@keyframes big-cAnim{
+    from {
+        width: 50px;
+        height: 50px;
+    }
+    to{
+        background-color: #344;
+    }
+}
